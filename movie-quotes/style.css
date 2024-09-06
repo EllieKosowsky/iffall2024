@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(215, 126, 126);
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Special Elite';
+}
+
+p{
+    width: 67%;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Courier New', monospace;
+    background-color: rgb(166, 96, 96);
+    display: block;
+    border: 5px solid rgb(170, 2, 2);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+    max-width: 60%;
+    height: auto;
+    border: 10px solid rgb(170, 2, 2);
+
+}
+
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.ghost {
+    position: absolute;
+    width: 75px; 
+    height: 75px;
+    background-image: url('ghost.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; 
+    opacity: 0.5; 
+}
+
+.ghost1 {
+    top: 10%;  
+    left: 3%;
+}
+
+.ghost2 {
+    top: 10%;  
+    right: 3%;
+}
+
+.anotherG {
+    position: absolute;
+    width: 150px; 
+    height: 150px;
+    background-image: url('ghost1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; 
+}
+
+.ghost3 {
+    top: 35%;  
+    left: 3%;
+}
+
+.ghost4 {
+    top: 35%;  
+    right: 3%;
+}
+
+
+.lastG {
+    position: absolute;
+    width: 75px; 
+    height: 75px;
+    background-image: url('ghost2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; 
+
+}
+
+.ghost5 {
+    top: 65%;  
+    left: 3%;
+}
+
+.ghost6 {
+    top: 65%;  
+    right: 3%;
+}
