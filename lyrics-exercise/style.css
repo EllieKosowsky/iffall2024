@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(86, 86, 86);
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Limelight', cursive;
+}
+
+p{
+    width: 75%;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#english-lyrics {
+    display: none;
+}
+
+#lyrics:checked ~ #english-lyrics {
+    display: block;
+}
+
+
+
