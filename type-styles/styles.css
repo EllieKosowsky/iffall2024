@@ -1,0 +1,55 @@
+h2 {
+    color: rgb(71, 178, 255);
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 22px;
+}
+
+small {
+    color: rgb(1, 1, 195);
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#italics {
+    font-style: italic;
+}
+
+#farther {
+    letter-spacing: .5em;
+}
+
+#closer {
+    letter-spacing: -.08em;
+}
+
+#uppercase {
+    text-transform: uppercase;
+}
+
+#lowercase {
+    text-transform: lowercase;
+}
+
+#capitalize {
+    text-transform: capitalize;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#overline {
+    text-decoration: overline;
+}
+
+#line-through {
+    text-decoration: line-through;
+}
+
+
+
