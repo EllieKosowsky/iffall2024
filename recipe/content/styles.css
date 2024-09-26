@@ -1,0 +1,106 @@
+header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: rgb(54, 155, 232);
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Playwrite CU';
+}
+
+body {
+    font-family: monospace;
+    background-color: rgb(241, 228, 186);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.img-cont { 
+    text-align: center;
+}
+
+img {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+strong {
+    font-size: 1.5em;
+    color: rgb(54, 155, 232);
+}
+
+#mom {
+    text-align: center;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+ul.list1 {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+ol.list2 {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.FAQs {
+    width: 40%;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+ol.list3 {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.answer {
+    margin-left: 50px;
+    width: 100%;
+    text-align: left;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+.recipe-websites p, .other-websites p {
+    text-align: left;
+}
+
