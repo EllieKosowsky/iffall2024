@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Delius", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 240, 209);
+    color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(255, 226, 168);
+}
+
+.description {
+    font-size: 1.2em;
+    background-color: rgb(254, 249, 231);
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 90%;
+}
+
+.description p {
+    line-height: 1.6;
+}
+
+.dietary {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.dietary img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.nut {
+    margin-top: 1px;
+}
+
+.veg {
+    margin-top: -3px;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.recipe-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.recipe-images img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.recipe-details {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Delius", cursive;
+    font-weight: 900;
+
+}
+ 
+h2 {
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+strong, h1, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.sign-up {
+    background-color: rgb(254, 249, 231);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sign-up h2 {
+    font-size: 2rem;
+    color: rgb(53, 53, 53);
+}
+
+.sign-up p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color:  rgb(53, 53, 53);
+}
+
+button {
+    margin-top: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgb(255, 226, 168);
+    font-family: 'Roboto', sans-serif;
+    font-size: .85rem;
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form .info {
+    display: flex;
+    gap: 10px;
+}
+
+.form input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 3px solid  rgb(255, 226, 168);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form .email {
+    width: 100%;
+}
+
+.footer {
+    background-color:  rgb(255, 226, 168);
+    color: rgb(53, 53, 53);
+    padding: 40px 40px 10px 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    color:  rgb(53, 53, 53);
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bottom {
+    padding-top: 20px;
+}
+
+/* responsive part */
+@media (max-width: 800px) {
+    .recipe {
+        flex-direction: column;
+    }
+
+    .recipe-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .recipe-images img {
+        width: 32%;
+    }
+
+    .recipe-details {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .recipe-images img:nth-child(2) {
+        /* only hiding the second image */
+        display: none; 
+    }
+
+    .recipe-images img {
+        width: 49%;
+    }
+
+    .recipe-details {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form .info {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
