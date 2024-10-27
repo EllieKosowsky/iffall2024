@@ -1,0 +1,423 @@
+body {
+    color: #333;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* layout / responsiveness for the button containers */
+.all-Buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 20px;
+}
+
+@media (max-width: 1400px) {
+    .all-Buttons {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+@media (max-width: 1000px) {
+    .all-Buttons {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 700px) {
+    .all-Buttons {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.button-container {
+    border: 1px solid rgb(221, 221, 221);
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* insta button */
+a#instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.insta-logo {
+    width: 60px; 
+    height: 60px;
+}
+
+a#instagram:hover {
+    background: linear-gradient(45deg, #bc1888, #cc2366, #dc2743, #e6683c, #f09433);
+    transform: scale(1.1);
+}
+
+/* lyft button */
+a#lyft {
+    display: inline-block;
+    position: relative; 
+    width: 200px;
+    height: 55px;
+    background-color: #ff00bf;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px; 
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.car {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    width: 30px; 
+    height: auto;
+    transition: all 1s ease;
+}
+
+a#lyft:hover .car {
+    left: calc(100% - 40px);
+}
+
+/* nike button */
+a#nike {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 12px 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    height: 40px;
+    width: 80px;
+}
+
+.nike-text {
+    display: inline-block;
+}
+
+.nike-logo {
+    /* don't display it unless on hover */
+    display: none; 
+    width: 60px; 
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a#nike:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+a#nike:hover .nike-text {
+    display: none;
+}
+
+a#nike:hover .nike-logo {
+    display: block;
+}
+
+/* harry potter button */
+#hp-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #120445; 
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%; 
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:'MedievalSharp', cursive;
+}
+
+.hp-text {
+    display: inline-block;
+    margin-top: 48px;
+    font-size: 25px;
+    transition: opacity 0.3s ease;
+}
+
+.glasses {
+    position: absolute;
+    margin-left: 3px;
+    top: 10px;
+    width: 70px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.lightning-bolt {
+    display: none;
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+}
+
+#hp-button:hover .hp-text,
+#hp-button:hover .glasses {
+    display: none;
+}
+
+#hp-button:hover .lightning-bolt {
+    display: inline-block;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(-3deg); }
+    25% { transform: translate(-48%, -52%) rotate(3deg); }
+    50% { transform: translate(-50%, -50%) rotate(-3deg); }
+    75% { transform: translate(-52%, -48%) rotate(3deg); }
+    100% { transform: translate(-50%, -50%) rotate(-3deg); }
+  }
+
+/* color run button */
+#color-run {
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    /* colors from the website */
+    background: linear-gradient(90deg, #fe3097, #fde509, #285dff); 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px; 
+    transition: background-color 0.3s ease;
+}
+
+.run {
+    position: absolute;
+    top: 7px; 
+    left: 5px;
+    width: 40px;
+    height: auto;
+    transition: left 1.5s ease;
+}
+
+.run2 {
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+    width: 40px;
+    height: auto;
+    /* moving faster than the other one */
+    transition: left .5s ease; 
+}
+
+
+#color-run:hover .run {
+    left: calc(100% - 50px);
+}
+
+#color-run:hover .run2 {
+    left: calc(100% - 50px);
+}
+
+#facebook {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #1877f2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 1s ease;
+}
+
+.facebook {
+    width: 100px;
+    height: auto;
+}
+
+#facebook:hover {
+    transform: rotate(360deg); 
+}
+
+/* ideo button */
+#ideo-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #333;
+    background-color: #5FC2B1;
+    border: 2px solid #5FC2B1;
+    border-radius: 10px; 
+    transition: all 0.5s ease;
+}
+
+#ideo-button:hover {
+    background-color: #EB5939;
+    color: white; 
+    border-radius: 50%;
+    padding: 20px 25px;
+}
+
+
+/* new yorker button */
+#new-yorker {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#new-yorker:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* cartoon network button */
+#cartoon-network {
+    display: inline-flex;
+    border: 1px solid black;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* making it 50/50 */
+.cn-left, .cn-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+.cn-left {
+    background-color: black;
+    color: white;
+}
+
+.cn-right {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#cartoon-network:hover .cn-left {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#cartoon-network:hover .cn-right {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.mooo {
+    transition: border 0.3s ease;
+}
+
+/* moo button */
+#moo-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    color: rgb(72, 161, 112);
+    text-decoration: none;
+    font-weight: bold;
+    transition: font-size 0.3s ease, letter-spacing 0.3s ease, transform 0.3s ease;
+}
+
+.water {
+    width: 30px;
+    height: auto;
+    margin-right: 10px; 
+    transition: opacity 0.3s ease; 
+}
+
+.moo-text {
+    transition: all 0.3s ease;
+}
+
+.mooo:hover {
+    border: none; 
+}
+
+#moo-button:hover .water {
+    display: none;
+}
+
+#moo-button:hover .moo-text {
+    font-size: 30px;
+    letter-spacing: 15px; 
+    transform: scale(1.1); 
+    text-transform: uppercase; 
+}
+
+
+
