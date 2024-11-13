@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nutcracker Winter Miracle - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- merriweather font for titles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rye&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae6839a4d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <img src="images/logo.png" alt="The Nutcracker Winter Miracle" class="header-logo">
+            <nav class="header-buttons">
+                <a href="history.html" class="header-button">History</a>
+                <a href="plot.html" class="header-button">Plot</a>
+                <a href="music.html" class="header-button">Music</a>
+                <a href="characters.html" class="header-button">Characters</a>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <br>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.header-buttons').classList.toggle('show');
+        }
+    </script>
+
+    <main>
+        <section class="introduction">
+            <h2>Explore the Magical World of The Nutcracker</h2>
+            <p>The Nutcracker ballet follows the magical journey of a young girl named Clara, who receives a nutcracker doll on Christmas Eve. That night, her Nutcracker comes to life, battling the Mouse King and leading Clara on an enchanted journey filled with dancing snowflakes, a Sugar Plum Fairy, and a celebration of sweets from around the world.</p>
+            <img src="images/nutcracker.jpg" alt="Nutcracker Ballet Scene" class="intro-image">
+        </section>
+
+        <section class="learn-more">
+            <div class="card">
+                <img src="images/ballet.jpg" alt="Nutcracker ballet history" class="card-image">
+                <div class="card-bg"></div>
+                <button onclick="window.location.href='history.html'">History</button>
+                <p>Learn more about the Nutcracker</p>
+            </div>
+            <div class="card">
+                <img src="images/children.jpg" alt="Nutcracker ballet plot" class="card-image">
+                <div class="card-bg"></div>
+                <button onclick="window.location.href='plot.html'">Plot</button>
+                <p>Learn more about the plot</p>
+            </div>
+            <div class="card">
+                <img src="images/music2.jpg" alt="Nutcracker ballet music" class="card-image">
+                <div class="card-bg"></div>
+                <button onclick="window.location.href='music.html'">Music</button>
+                <p>Explore the magical music</p>
+            </div>
+            <div class="card">
+                <img src="images/fight.jpg" alt="Nutcracker ballet characters" class="card-image">
+                <div class="card-bg"></div>
+                <button onclick="window.location.href='characters.html'">Characters</button>
+                <p>Meet the characters</p>
+            </div>
+        </section>
+    </main>
+    <br>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 The Nutcracker Winter Miracle | Sources</p>
+        </div>
+    </footer>
+</body>
+</html>

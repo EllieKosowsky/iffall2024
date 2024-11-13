@@ -1,0 +1,15 @@
+@import url('css/styles.css');
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.content ul li {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 0.5rem 0;
+    text-align: left;
+    padding-left: 20px; 
+}

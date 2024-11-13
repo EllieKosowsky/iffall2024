@@ -1,0 +1,70 @@
+/* importing so it don't have to repeat footer and header */
+@import url('styles.css');
+
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* going to change this but wanted to try somehting fun for now */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Merriweather", serif;
+    color: #679CC3;
+    animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #679CC3;
+        font-size: 2rem;
+    }
+    100% {
+        color: #89d4f7;
+        font-size: 2.5rem;
+    }
+}
+
+
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+    text-decoration: underline;
+    color: #679CC3;
+    font-family: "Merriweather", serif;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+.history-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    border-radius: 8px;
+    outline: 10px solid #011241b4; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modern-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+    border: none;
+    outline: 10px solid #002998bf; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
