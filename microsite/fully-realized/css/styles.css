@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
+
+header {
+    position: relative;
+    font-family: "Merriweather", serif;
+    color: white;
+    padding: 1.5rem;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-background {
+    background: url('../images/background.jpeg') center/cover no-repeat;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: bold;
+}
+
+.header-logo {
+    max-height: 11.25rem; 
+    margin-top: 20px;
+    margin-left: -1rem;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-button {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.header-button:hover {
+    color: #679CC3;
+}
+
+.hamburger-menu {
+    display: none;
+    margin-top: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #679CC3;
+    font-family: "Merriweather", serif;
+}
+
+.introduction {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduction p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 1.5rem auto 1.5rem;
+    max-width: 625px;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+.learn-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    background-color: #e0f0ff; /
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #679CC3;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+.card button {
+    background-color: #679CC3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: auto; 
+    font-family: "Merriweather", serif;
+    margin-bottom: .25rem;
+}
+
+.card button:hover {
+    background-color: #557BA2;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: url('../images/background.jpeg') center/cover no-repeat;
+    opacity: 0.75;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* responsive part for nav */
+@media (max-width: 800px) {
+    .header-buttons {
+        display: none;
+        gap: 15px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .header-button {
+        font-size: 1.2rem; 
+    }
+
+    .header-buttons.show {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .header-buttons {
+        display: none;
+        gap: 15px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .header-button {
+        font-size: 1rem; 
+    }
+    
+    .menu {
+        gap: 10px;
+    }
+    
+    .header-logo {
+        max-height: 8rem; 
+        margin-top: 20px;
+    }
+    
+}
