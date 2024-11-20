@@ -1,0 +1,91 @@
+@import url('css/styles.css');
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    font-family: "Merriweather", serif;
+    color: #679CC3;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: .75rem;
+    color: #679CC3;
+    font-family: "Merriweather", serif;
+}
+
+.heading::before, 
+.heading::after {
+    content: '✨';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.heading:hover::before, 
+.heading:hover::after {
+    font-size: 4rem;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    text-decoration: none;
+    color: #679CC3;
+    font-family: "Merriweather", serif;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.song-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem 2rem 1rem 2rem;
+    background-color: #f3f7fb;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #679CC3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.song-container h3 {
+    font-size: 1.5rem;
+    color: #679CC3;
+    font-family: "Merriweather", serif;
+    margin-bottom: 0.5rem;
+}
+
+.song-container p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    cursor: pointer;
+}
+
+.fa-music {
+    margin-right: 10px;
+    color: #679CC3;
+}

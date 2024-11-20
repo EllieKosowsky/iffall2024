@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nutcracker - History</title>
+    <!-- going to share this style page -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- and have its own style sheet -->
+    <link rel="stylesheet" href="css/history.css">
+
+    <!-- merriweather font for titles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rye&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <!-- <img src="images/logo.png" alt="The Nutcracker Winter Miracle" class="header-logo"> -->
+            <nav class="header-buttons">
+                <a href="index.html" class="header-button">The Nutcracker</a>
+                <a href="history.html" class="header-button">History</a>
+                <a href="plot.html" class="header-button">Plot</a>
+                <a href="music.html" class="header-button">Music</a>
+                <a href="characters.html" class="header-button">Characters</a>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <br>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.header-buttons').classList.toggle('show');
+        }
+    </script>
+
+    <main>
+        <section class="content">
+            <h2 class="title">Historical and Modern Implications of</h2>
+            <h1 class="heading">The Nutcracker</h1>
+            <br>
+            <h2>History</h2>
+            <img src="images/then.jpg" alt="Nutcracker History Image" class="history-image">
+            <p>The Nutcracker ballet originated from E.T.A. Hoffmann's 1816 story The Nutcracker and the Mouse King, later adapted by Alexandre Dumas and transformed into a ballet by composer Pyotr Ilyich Tchaikovsky in 1892. The two-act ballet follows a young girl, Clara, who embarks on a magical adventure with her enchanted Nutcracker prince, encountering whimsical characters like the Mouse King, dancing snowflakes, and the Sugar Plum Fairy. Though initially receiving mixed reviews at its premiere in St. Petersburg, Russia, The Nutcracker quickly gained popularity, and by the mid-20th century, George Balanchine’s 1954 production with the New York City Ballet cemented its status as a cherished holiday tradition in the United States and beyond.</p>
+            <br>
+            <h2>Modern Times</h2>
+            <img src="images/now.jpeg" alt="Nutcracker Now Image" class="modern-image">
+            <p>Today, The Nutcracker is one of the most beloved and widely performed ballets, especially during the Christmas season, with countless versions staged around the world each year. Modern productions vary widely, with some sticking to classical interpretations and others incorporating new cultural influences, contemporary choreography, or updated settings, but all retain the ballet's enchanting music and core story. This timeless tale of holiday magic, dreams, and adventure continues to captivate audiences of all ages, symbolizing the wonder of the holiday season and inspiring new generations of ballet enthusiasts.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Nutcracker Winter Miracle</p>
+    </footer>
+</body>
+</html>

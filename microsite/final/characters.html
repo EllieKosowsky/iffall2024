@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nutcracker Winter Miracle - Characters</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/characters.css">
+
+    <!-- merriweather font for titles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rye&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae6839a4d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <!-- <img src="images/logo.png" alt="The Nutcracker Winter Miracle" class="header-logo"> -->
+            <nav class="header-buttons">
+                <a href="index.html" class="header-button">The Nutcracker</a>
+                <a href="history.html" class="header-button">History</a>
+                <a href="plot.html" class="header-button">Plot</a>
+                <a href="music.html" class="header-button">Music</a>
+                <a href="characters.html" class="header-button">Characters</a>
+            </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <br>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.header-buttons').classList.toggle('show');
+        }
+    </script>
+
+<main>
+    <section class="content">
+        <h2>Main Characters of</h2>
+        <h1 class="heading">The Nutcracker</h1>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="images/clara.jpg" alt="Clara Stahlbaum" class="character-image">
+                <h3>Clara Stahlbaum</h3>
+                <p>A girl having an eventful holiday</p>
+            </div>
+            <div class="character-card">
+                <img src="images/prince.jpg" alt="Prince" class="character-image">
+                <h3>The Prince</h3>
+                <p>Drosselmeier's nephew</p>
+            </div>
+            <div class="character-card">
+                <img src="images/fairy.jpg" alt="Sugar Plum Fairy" class="character-image fairy">
+                <h3>Sugar Plum Fairy</h3>
+                <p>Ruler of the Land of the Sweets</p>
+            </div>
+            <div class="character-card">
+                <img src="images/godfather.jpg" alt="Drosselmeyer" class="character-image gf">
+                <h3>Drosselmeyer</h3>
+                <p>Clara's godfather</p>
+            </div>
+            <div class="character-card">
+                <img src="images/doll.jpg" alt="Nutcracker Doll" class="character-image">
+                <h3>The Nutcracker Doll</h3>
+                <p>Drosselmeier's gift for Clara</p>
+            </div>
+            <div class="character-card">
+                <img src="images/fritz.jpg" alt="Fritz" class="character-image">
+                <h3>Fritz Stahlbaum</h3>
+                <p>Clara's brother</p>
+            </div>
+            <div class="character-card">
+                <img src="images/king.jpg" alt="The Mouse King" class="character-image">
+                <h3>The Mouse King</h3>
+                <p>Enemy to nutcrackers and toy soldiers alike</p>
+            </div>
+            <div class="character-card">
+                <img src="images/parents.jpg" alt="Parents at the Party" class="character-image">
+                <h3>Dr. and Mrs. Stahlbaum</h3>
+                <p>Clara and Fritz's parents</p>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 The Nutcracker Winter Miracle | <a href="https://www.pnb.org/blog/nutcracker-character-guide/" target="_blank" rel="noopener noreferrer">Source</a></p>
+        </div>
+    </footer>
+</body>
+</html>
