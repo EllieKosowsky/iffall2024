@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Nutcracker Winter Miracle - Home</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/header.css">
     <!-- merriweather font for titles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,22 +14,22 @@
 </head>
 <body>
     <header>
-        <div class="header-background"></div>
-        <div class="header-content">
-            <!-- <img src="images/logo.png" alt="The Nutcracker Winter Miracle" class="header-logo"> -->
-            <nav class="header-buttons">
-                <a href="index.html" class="header-button">The Nutcracker</a>
-                <a href="history.html" class="header-button">History</a>
-                <a href="plot.html" class="header-button">Plot</a>
-                <a href="music.html" class="header-button">Music</a>
-                <a href="characters.html" class="header-button">Characters</a>
-            </nav>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
-            </div>
+        <nav class="header-buttons">
+            <a href="index.html" class="header-button">The Nutcracker</a>
+            <a href="history.html" class="header-button">History</a>
+            <a href="plot.html" class="header-button">Plot</a>
+            <a href="music.html" class="header-button">Music</a>
+            <a href="characters.html" class="header-button">Characters</a>
+        </nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
         </div>
     </header>
-    <br>
+
+    <div class="image-container">
+        <img src="images/nutcracker.jpg" alt="Nutcracker Ballet Scene" class="intro-image">
+    </div>
+
     <script>
         function toggleMenu() {
             document.querySelector('.header-buttons').classList.toggle('show');
@@ -41,7 +41,7 @@
             <h2>Explore the Magical World of</h2>
             <h1 class="heading">The Nutcracker</h1>
             <p>The Nutcracker ballet follows the magical journey of a young girl named Clara, who receives a nutcracker doll on Christmas Eve. That night, her Nutcracker comes to life, battling the Mouse King and leading Clara on an enchanted journey filled with dancing snowflakes, a Sugar Plum Fairy, and a celebration of sweets from around the world.</p>
-            <img src="images/nutcracker.jpg" alt="Nutcracker Ballet Scene" class="intro-image">
+            <!-- <img src="images/nutcracker.jpg" alt="Nutcracker Ballet Scene" class="intro-image"> -->
         </section>
 
         <section class="learn-more">
