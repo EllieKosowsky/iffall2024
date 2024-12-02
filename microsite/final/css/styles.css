@@ -20,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(180deg, rgba(16, 8, 41, 0.7) 0%, rgba(16, 8, 41, 0) 100%);
 }
 
 .header-background {
@@ -53,6 +54,8 @@ header {
 .header-button {
     font-size: 1.5rem;
     text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
     color: white;
     transition: ease-in .3s;
 }
@@ -218,10 +221,11 @@ h1:hover {
     opacity: 1;
     color: white;
     font-size: 1.2rem;
+    font-weight: bold;
     padding: 1.5rem;
     text-align: center;
     font-family: "Merriweather", serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
 }
 
 /* responsive part for nav */
